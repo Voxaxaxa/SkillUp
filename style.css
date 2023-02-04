@@ -106,6 +106,37 @@ body {
     justify-content: center;
     align-items: center;
     border-left: 1px solid #2c71b8;
+    position: relative;
+}
+
+.product-menu{
+    margin-top: -10px;
+    position: absolute;
+    background-color: #2c71b8;
+    width: 285px;
+    z-index: 10;
+}
+
+.menu :hover .product-menu li{
+    display: block;
+}
+
+.product-menu li {
+    display: none;
+    width: 100%;
+}
+
+.product-menu li a{
+    padding-top: 15px;
+    display: block;
+    color: white;
+    width: auto;
+    text-align: left;
+}
+
+.product-menu li a:hover{
+    color: #2c71b8;
+    background-color: white;
 }
 
 .menu a:hover {
@@ -191,6 +222,7 @@ body {
     font-size: 21px;  
 }
 
+
 .dropdown-sort{
     display: none;
     position: absolute;
@@ -221,7 +253,7 @@ body {
     font-size: 21px;
     width: 100%;
     display: block;
-    border: 1px solid white;
+    
 }
 
 .product{
