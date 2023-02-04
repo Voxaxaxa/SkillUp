@@ -127,6 +127,7 @@ body {
 }
 
 .product-menu li a{
+    padding-left: 10px;
     padding-top: 15px;
     display: block;
     color: white;
@@ -231,6 +232,7 @@ body {
     padding: 10px 0px 0px 0px ;
     color: #2c71b8;
     width: 100%;
+    z-index: 10;
 }
 
 .dropdown-sort li{
@@ -248,12 +250,12 @@ body {
 }
 
 .dropdown-sort li a{
+    padding: 5px;
     text-decoration: none;
     color: white;
     font-size: 21px;
     width: 100%;
     display: block;
-    
 }
 
 .product{
