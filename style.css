@@ -286,21 +286,39 @@ body {
     justify-content: center;
 }
 
-
-
-/* .zoom :nth-child(2){
-display: none;
+.zoom-btn{
+    width: 20px;
+    height: 20px;
+    background-image: url(/zoom.png);
+    border: none;
+    background-color: transparent;
 }
 
-.zoom:nth-child(1):hover{
-display: none;
+.zoom-btn:hover{
+    width: 20px;
+    height: 20px;
+    background-image: url(/zoomhover.png);
+    border: none;
+    background-color: #2c71b8;
 }
 
-.zoom:nth-child(2):hover{
-display: block;
-background-color: #2c71b8;
-} */
+.like-btn{
+    width: 20px;
+    height: 20px;
+    background-image: url(/like.png);
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.like-btn:hover{
+    width: 20px;
+    height: 20px;
+    background-image: url(/likehover.png);
+    border: none;
+    background-color: #2c71b8;
+}
 
 .like{
     width: 30px;
