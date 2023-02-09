@@ -26,16 +26,19 @@ btn.addEventListener("click", function () {
 
 
 
-let blockButton = document.querySelector(".like-btn");
+let blockButtons = document.querySelectorAll(".like-btn");
+    blockButtons.forEach ((btn) =>
+    btn.addEventListener("click", () => {
+            if(btn.classList.contains('like-btn')){
+                btn.classList.add('like-btnToo')
+                btn.classList.remove('like-btn')
+            } else {
+                btn.classList.add('like-btn')
+                btn.classList.remove('like-btnToo')
+            }
+        })
+    );
 
-    blockButton.addEventListener("click", () => {
-    if(blockButton.classList.contains('like-btn')){
-        blockButton.classList.add('like-btnToo')
-        blockButton.classList.remove('like-btn')
-    } else {
-        blockButton.classList.add('like-btn')
-        blockButton.classList.remove('like-btnToo')
-    }
-});
+
 
 
