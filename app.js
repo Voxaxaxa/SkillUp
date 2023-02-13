@@ -29,16 +29,52 @@ btn.addEventListener("click", function () {
 let blockButtons = document.querySelectorAll(".like-btn");
     blockButtons.forEach ((btn) =>
     btn.addEventListener("click", () => {
-            if(btn.classList.contains('like-btn')){
-                btn.classList.add('like-btnToo')
-                btn.classList.remove('like-btn')
-            } else {
-                btn.classList.add('like-btn')
-                btn.classList.remove('like-btnToo')
-            }
+            // if(btn.classList.contains('like-btn')){
+            //     btn.classList.add('like-btnToo')
+            //     btn.classList.remove('like-btn')
+            // } else {
+            //     btn.classList.add('like-btn')
+            //     btn.classList.remove('like-btnToo')
+            // }
+            btn.classList.toggle('like-btnToo');
         })
     );
 
 
+    let moreDetailsBtns = document.querySelectorAll(".btn-more-details");
+    let modal = document.querySelector(".modal")
+    let btnClose = document.querySelector(".btnn-close")
 
+    moreDetailsBtns.forEach((item) =>
+    item.addEventListener("click", function () {
+        modal.classList.add("show");
+        modal.classList.remove("hide")
+    }) );
+
+
+    btnClose.addEventListener("click", function () {
+        modal.classList.add("hide");
+        modal.classList.remove("show")
+    }) ;
+
+
+    function openModal() {
+        modal.classList.add("show");
+        modal.classList.remove("hide");
+    }
+    
+    function closeModal() {
+        modal.classList.add("hide");
+        modal.classList.remove("show");
+    }
+
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+
+
+$(".slider-block").slick();
 
