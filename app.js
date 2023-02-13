@@ -76,5 +76,8 @@ let blockButtons = document.querySelectorAll(".like-btn");
 
 
 
-$(".slider-block").slick();
+$(".slider-block").slick({
+    autoplay: true,
+    dots: true,
+});
 
