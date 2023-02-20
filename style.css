@@ -393,7 +393,7 @@ body {
 .product-fwatures{
     color: white;
     font-size: 21px;
-    margin-top: 14px;
+    margin-top: 12px;
     margin-left: 14px;
 }
 
@@ -406,7 +406,7 @@ body {
     font-size: 48px;
     font-weight: bold;
     text-align: center;
-    margin: 25px 0px ;
+    margin: 0px 0px ;
 }
 
 [class*="btn-"]{
@@ -593,4 +593,46 @@ input[type="checkbox"]:checked + label::before{
     height: 70px;
     display: block;
     opacity: 0.89;
+}
+
+.product-quantity {
+    text-align: center;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+input{
+    width: 100px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: #2c71b8;
+    color: white;
+    font-size: 15px;
+}
+
+.decrement-button{
+    width: 20px;
+    border: 1px solid white;
+    background-color: #2c71b8;
+    color: white;
+    font-size: 15px; 
+}
+
+.increment-button{
+    width: 20px;
+    border: 1px solid white;
+    background-color: #2c71b8;
+    color: white;
+    font-size: 15px; 
+}
+
+.footer{
+    height: 100px;
+    background-color: rgb(255, 255, 255, .50);
+    margin-top: 100px;
+    color: #2c71b8;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 40px;   
 }
